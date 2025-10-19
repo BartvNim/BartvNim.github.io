@@ -1,0 +1,27 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 0.4s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
