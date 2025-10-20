@@ -2,6 +2,7 @@ const text = "BART VAN NIMWEGEN";
 const title = "Bart van Nimwegen";
 const typedText = document.getElementById("typedText");
 const cursor = document.getElementById("cursor");
+const links = document.querySelectorAll(".links a");
 let index = 0;
 
 function type() {
@@ -16,5 +17,15 @@ function type() {
   }
 }
 
+function showLinks() {
+  links.forEach((link, i) => {
+    setTimeout(() => {
+      link.style.opacity = "1";
+      link.style.pointerEvents = "auto";
+    }, i * 400);
+  });
+}
+
 setTimeout(type, 400);
 document.title = "_";
+setTimeout(showLinks, text.length * 60 + 1500);
