@@ -3,6 +3,7 @@ const title = "Bart van Nimwegen";
 const typedText = document.getElementById("typedText");
 const cursor = document.getElementById("cursor");
 const links = document.querySelectorAll(".links a");
+const myLocation = document.getElementById("myLocation");
 let index = 0;
 
 function type() {
@@ -28,4 +29,7 @@ function showLinks() {
 
 setTimeout(type, 400);
 document.title = "_";
-setTimeout(showLinks, text.length * 60 + 1500);
+setTimeout(() => {
+  myLocation.classList.add("visible");
+}, text.length * 60 + 1200);
+setTimeout(showLinks, text.length * 60 + 2700);
