@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bart van Nimwegen</title>
+    <meta
+      name="description"
+      content="Portfolio Page of Bart van Nimwegen, Software developer from Uden, North Brabant, Netherlands."
+    />
+    <meta name="keywords" content="Bart van Nimwegen, software developer, Uden, Netherlands" />
+    <meta name="author" content="Bart van Nimwegen" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="./javascript/homepage.js" defer></script>
@@ -44,5 +50,21 @@
       </div>
     </main>
     <script src="index.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bart van Nimwegen",
+        "url": "https://bartvnim.nl",
+        "sameAs": ["https://github.com/BartvNim", "https://www.linkedin.com/in/bart-van-nimwegen/"],
+        "jobTitle": "Software Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Uden",
+          "addressRegion": "North Brabant",
+          "addressCountry": "Netherlands"
+        }
+      }
+    </script>
   </body>
 </html>
